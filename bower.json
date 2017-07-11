@@ -1,0 +1,22 @@
+{
+  "name": "pokedex",
+  "description": "Pokedex built with Angular, Polymer and Pokeapi",
+  "main": "",
+  "authors": [
+    "Stiven Castillo <stiven.castillo@creardigital.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/bacabange/pokedex",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.1",
+    "paper-card": "PolymerElements/paper-card#^2.0.0",
+    "paper-button": "PolymerElements/paper-button#^2.0.0"
+  }
+}
