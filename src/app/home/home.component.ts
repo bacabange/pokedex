@@ -15,7 +15,8 @@ import Pokemon from '../models/pokemon';
 })
 export class HomeComponent implements OnInit {
 
-	private allPokemon: Array<Pokemon> = [];
+	private pokemons: Array<Pokemon> = [];
+	public errorMessage: any;
 
 	constructor(public service: PokeapiService) { }
 

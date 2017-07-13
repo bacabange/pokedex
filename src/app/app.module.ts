@@ -6,7 +6,10 @@ import { routing, appRoutingProviders} from './app.routing';
 import { MaterialModule } from '@angular/material';
 import { PolymerModule } from '@codebakery/origami';
 import { IronElementsModule, PaperElementsModule } from '@codebakery/origami/lib/collections';
+import { HttpModule } from '@angular/http';
 import 'hammerjs';
+
+import { PokeapiService } from './services/pokeapi/pokeapi.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -29,10 +32,12 @@ import { SearchInputComponent } from './shared/search-input/search-input.compone
     FormsModule,
     PolymerModule.forRoot(),
     IronElementsModule,
-    PaperElementsModule
+    PaperElementsModule,
+    HttpModule
   ],
   providers: [
-  	appRoutingProviders
+  	appRoutingProviders,
+    PokeapiService
   ],
   bootstrap: [AppComponent]
 })
