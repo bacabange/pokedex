@@ -18,10 +18,16 @@ export class HomeComponent implements OnInit {
 	private pokemons: Array<Pokemon> = [];
 	public errorMessage: any;
 
-	constructor(public service: PokeapiService) { }
+	constructor(public servicePokeapi: PokeapiService) { }
 
 	ngOnInit() {
-		
+		this.servicePokeapi.getPokemons()
+			.map(
+				res => res.json()
+			)
+			.subscribe(
+				res => this.pokemons = res.pokemon_entries
+			)
 	}
 
 }

@@ -13,7 +13,7 @@
 
 		<md-card-content>
 
-			<paper-card heading="Bulbasaur" image="http://placehold.it/150x150/FFC107/000000" alt="Emmental"></paper-card>
+			<paper-card heading="{{ pokemon.name }}" image="assets/images/pokemon/1.png" alt="Emmental"  *ngFor="let pokemon of pokemons"></paper-card>
 			
 		</md-card-content>
 	</md-card>

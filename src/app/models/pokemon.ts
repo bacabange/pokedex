@@ -1,7 +1,11 @@
 import { get, sortBy } from 'lodash';
 
 export default class Pokemon {
-    name: String
+
+    name: string;
+    resource_uri: string;
+
+    /*name: String
     uri: String
     moves: Array<Object>
     egg_groups: Array<Object>
@@ -26,5 +30,5 @@ export default class Pokemon {
             sp_def: get(json, 'sp_def', 'Unknown'),
             weight: parseInt(get(json, 'weight', '0'), 10)
         }
-    }
+    }*/
 }
