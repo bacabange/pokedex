@@ -11,9 +11,23 @@
 			</md-card-title>
 		</md-card-header>
 
-		<md-card-content>
+		<md-card-content 
+			fxLayout 
+			fxLayout.xs="column" 
+			fxLayoutAlign="start" 
+			fxLayoutWrap="wrap">
 
-			<paper-card heading="{{ pokemon.name }}" image="assets/images/pokemon/1.png" alt="Emmental"  *ngFor="let pokemon of pokemons"></paper-card>
+			<paper-card 
+				fxFlex="20%" 
+				heading="{{ pokemon.pokemon_species.name }}" 
+				image="assets/images/pokemon/{{ pokemon.entry_number }}.png" 
+				alt="{{ pokemon.pokemon_species.name }}" 
+				*ngFor="let pokemon of pokemons">
+
+				<div class="card-content">
+					{{ pokemon.pokemon_species.name }}
+				</div>
+			</paper-card>
 			
 		</md-card-content>
 	</md-card>

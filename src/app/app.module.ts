@@ -7,6 +7,7 @@ import { MaterialModule } from '@angular/material';
 import { PolymerModule } from '@codebakery/origami';
 import { IronElementsModule, PaperElementsModule } from '@codebakery/origami/lib/collections';
 import { HttpModule } from '@angular/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 
 import { PokeapiService } from './services/pokeapi/pokeapi.service';
@@ -33,7 +34,8 @@ import { SearchInputComponent } from './shared/search-input/search-input.compone
     PolymerModule.forRoot(),
     IronElementsModule,
     PaperElementsModule,
-    HttpModule
+    HttpModule,
+    FlexLayoutModule
   ],
   providers: [
   	appRoutingProviders,

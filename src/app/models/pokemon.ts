@@ -2,8 +2,8 @@ import { get, sortBy } from 'lodash';
 
 export default class Pokemon {
 
-    name: string;
-    resource_uri: string;
+    entry_number: number;
+    pokemon_species: Object;
 
     /*name: String
     uri: String
